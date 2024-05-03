@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-weight: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ff00ff;
+}
+
+nav ul li a i {
+  font-size: 10px;
+}
+
+#hero {
+  height: 100vh;
+  text-align: center;
+  align-content: center;
+}
+
+.hero {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/images/hero section.jpg");
+  min-height: 100%;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.419);
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+.hero-content {
+  color: white;
+}
+.hero-content > h1 {
+  font-size: 70px;
+}
+.hero-content > p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content a button {
+  padding: 10px 60px 10px 60px;
+  font-size: 17px;
+  background-color: #ff00ff;
+  color: white;
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+}
+
+#about {
+  background-color: #ccc;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.about-heading h1 {
+  padding-top: 50px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.about-heading p {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 180px;
+  margin-right: 160px;
+  padding-bottom: 100px;
+  gap: 30px;
+}
+
+.box-1 h1 {
+  border-bottom: 1 px solid #ff00ff;
+}
+
+.box-2 img {
+  height: 400px;
+}
+
+.container-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.container-2 > a {
+  text-decoration: none;
+  font-weight: normal;
+}
+.container-2 .span-color {
+  color: #ff00ff;
+  border-right: 2px solid #ccc;
+}
+.container-2 span {
+  font-weight: normal;
+  border-right: 2px solid #ccc;
+}
+
+.box-1-btn {
+  margin-top: 3Opx;
+  padding: 10px 60px 10px 60px;
+  font-size: 17px;
+  background-color: #ff00ff;
+  color: white;
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.projectmanager-container {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 140px;
+  margin-right: 140px;
+  gap: 100px;
+}
+
+.item-1 img {
+  border-radius: 50%;
+}
+
+.item-2 h1 {
+  font-size: 48px;
+}
+
+.item-2 h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.item-2 p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.share-icons a i {
+  font-size: 40px;
+  margin-right: 30px;
+  border: 1px solid #ff00ff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #ff00ff;
+}
+
+.share-icons a i:hover {
+  color: white;
+  background-color: #ff00ff;
+}
+
+.bgimg-1 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/images/parallex.avif");
+  min-height: 100%;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+}
+
+.line-border {
+  border-left: 5px solid red;
+  height: 100px;
+}
+
+#service {
+  background-color: wheat;
+}
+
+.service-heading {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.service-heading > h1 {
+  padding-top: 10px;
+  font-size: 48px;
+  font-weight: 800;
+}
+.service-heading span {
+  color: #ff00ff;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-bottom: 100px;
+}
+.service-container > div {
+  height: 200px;
+  width: 350px;
+  background-color: #ccc;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+}
+.service-container i {
+  font-size: 40px;
+  color: #ff00ff;
+}
+.service-container p {
+  font-size: 18px;
+  color: #ff00ff;
+}
+
+.service-container-2 p {
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.service-container-2 h5 {
+  font-size: 20px;
+  color: #ff00ff;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.testominal-content {
+  margin-left: 160px;
+  margin-right: 160px;
+  text-align: center;
+  color: white;
+}
+
+.testominal-img img {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.testominal-para p {
+  margin-bottom: 30px;
+}
+
+.testominal-para span {
+  color: #ff00ff;
+}
+
+.bgimg-2 {
+  background-image: url(/images/tea\ parrallex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  background-attachment: fixed;
+}/*# sourceMappingURL=style.css.map */
