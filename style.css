@@ -97,6 +97,9 @@ nav ul li a i {
 
 #about {
   background-color: #ccc;
+  height: 100vh;
+  text-align: center;
+  align-content: center;
 }
 
 .about-heading {
@@ -227,7 +230,7 @@ nav ul li a i {
   padding-bottom: 30px;
 }
 .service-heading > h1 {
-  padding-top: 10px;
+  padding-top: 50px;
   font-size: 48px;
   font-weight: 800;
 }
@@ -304,4 +307,144 @@ nav ul li a i {
   align-items: center;
   align-content: center;
   background-attachment: fixed;
+}
+
+.portfolio-heading {
+  text-align: center;
+}
+.portfolio-heading > h1 {
+  padding-top: 50px;
+  font-size: 48px;
+}
+.portfolio-heading span {
+  color: #ff00ff;
+}
+
+.portfolio-btn {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.portfolio-btn a button {
+  margin: 10px;
+  padding: 10px 40px 10px 40px;
+  font-weight: normal;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 25px;
+  border-color: #ff00ff;
+  background-color: white;
+}
+
+.portfolio-btn a button:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.portfolio-container {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 160px;
+  margin-right: 160px;
+  gap: 30px;
+}
+
+.cool-fact-1 {
+  height: 50vh;
+}
+
+.cool-fact {
+  height: 60vh;
+  background-image: url("/images/coolfact.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+  align-content: center;
+}
+
+.cool-fact-heading {
+  text-align: center;
+}
+.cool-fact-heading > h1 {
+  font-size: 48px;
+  color: white;
+}
+.cool-fact-heading span {
+  color: #ff00ff;
+}
+.cool-fact-heading p {
+  color: white;
+}
+
+.project-work {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  text-align: center;
+  color: white;
+}
+.project-work .work-icons i {
+  font-size: 120px;
+  margin: 10px;
+}
+.project-work p {
+  font-size: 48px;
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+.team-heading {
+  text-align: center;
+}
+.team-heading > h1 {
+  padding-top: 50px;
+  font-size: 48px;
+}
+.team-heading span {
+  color: #ff00ff;
+}
+
+.team-heading p {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.team-item-img {
+  background: url("/images/member1.jpg") no-repeat center center/cover;
+  height: 350px;
+  width: 300px;
+}
+
+.team-item-img {
+  text-align: center;
+  align-content: center;
+}
+
+.team-icons {
+  margin-top: 80px;
+}
+
+.team-icons i {
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.team-icons i:hover {
+  background-color: white;
+  color: #ff00ff;
 }/*# sourceMappingURL=style.css.map */

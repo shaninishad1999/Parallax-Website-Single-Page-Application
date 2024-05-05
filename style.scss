@@ -112,6 +112,9 @@ nav ul li a i {
 
 #about {
     background-color: #ccc;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
 }
 
 .about-heading {
@@ -123,7 +126,7 @@ nav ul li a i {
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
-//    padding: 15px 0;
+    //    padding: 15px 0;
 }
 
 .about-heading p {
@@ -269,19 +272,22 @@ nav ul li a i {
 
 // service 
 
-#service{
-    background-color:wheat;
+#service {
+    background-color: wheat;
+
+
 }
+
 .service-heading {
     text-align: center;
     padding-bottom: 30px;
 
     >h1 {
-        padding-top: 10px;
+        padding-top: 50px;
         font-size: 48px;
         // line-height: 48px;
         font-weight: 800;
-       
+
     }
 
     span {
@@ -373,3 +379,169 @@ nav ul li a i {
     align-content: center;
     background-attachment: fixed;
 }
+
+// portfolio
+
+.portfolio-heading {
+    text-align: center;
+
+    >h1 {
+        padding-top: 50px;
+        font-size: 48px;
+    }
+
+    span {
+        color: #ff00ff;
+    }
+}
+
+.portfolio-btn {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.portfolio-btn a button {
+    margin: 10px;
+    padding: 10px 40px 10px 40px;
+    font-weight: normal;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 25px;
+    border-color: #ff00ff;
+    background-color: white;
+}
+
+.portfolio-btn a button:hover {
+    background-color: #ff00ff;
+    color: white;
+}
+
+
+.portfolio-container {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 160px;
+    margin-right: 160px;
+    gap: 30px;
+}
+
+.cool-fact-1 {
+    height: 50vh;
+}
+
+.cool-fact {
+    height: 60vh;
+    background-image: url('/images/coolfact.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+
+}
+
+.cool-fact-heading {
+    text-align: center;
+
+    >h1 {
+        font-size: 48px;
+        color: white;
+    }
+
+    span {
+        color: #ff00ff;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.project-work {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    text-align: center;
+    color: white;
+
+    .work-icons i {
+        font-size: 120px;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 48px;
+        color: #ff00ff;
+        font-weight: bold;
+    }
+
+}
+
+.team-heading {
+    text-align: center;
+
+    >h1 {
+        padding-top: 50px;
+        font-size: 48px;
+    }
+
+    span {
+        color: #ff00ff;
+    }
+}
+
+.team-heading p {
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+
+.team-item-img {
+    background: url('/images/member1.jpg')no-repeat center center/cover;
+    height: 350px;
+    width: 300px;
+
+}
+
+.team-item-img {
+    text-align: center;
+    align-content: center;
+
+
+}
+
+.team-icons{
+    margin-top: 80px;
+}
+.team-icons i {
+    // margin: 10px;
+
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid white;
+    // display: none;
+}
+.team-icons i:hover{
+    background-color: white;
+    color: #ff00ff;
+}
+
+
+
+
