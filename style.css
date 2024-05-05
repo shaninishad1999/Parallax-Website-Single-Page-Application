@@ -447,4 +447,133 @@ nav ul li a i {
 .team-icons i:hover {
   background-color: white;
   color: #ff00ff;
+}
+
+.newselter-para {
+  text-align: center;
+  color: white;
+}
+
+.subscribe {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type=email],
+select {
+  width: 50%;
+  padding: 10px 20px;
+  font-size: 17px;
+  margin: 10px;
+  outline: none;
+  border: transparent;
+  border-radius: 25px;
+  font-weight: normal;
+}
+
+input[type=button],
+select {
+  width: 20%;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ff00ff;
+}
+
+.newselter-img {
+  background-image: url("/images/newselter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.blog-item {
+  background-image: url("/images/blog-post-small-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 400px;
+}
+
+.blog-main-div {
+  text-align: center;
+}
+
+.square {
+  background-color: #ff00ff;
+  height: 70px;
+  width: 40px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.blog-main-div h1 {
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.blog-main-div-para {
+  text-align: left;
+  padding: 20px;
+}
+
+.blog-btn {
+  margin-top: 20PX;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blog-btn button {
+  padding: 10px 40px 10px 40px;
+  background-color: #ff00ff;
+  color: white;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.team-heading {
+  color: white;
+}
+
+.team-heading p {
+  color: white;
+}
+
+.video-img {
+  background-image: url("/images/V.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+.team-heading-eprara {
+  color: black;
+}
+
+.headd {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
