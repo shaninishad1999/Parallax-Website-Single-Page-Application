@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        
+        <input type="checkbox" id="click">
         <nav>
             <a href="#"><img src="/images/orange.png" alt=""></a>
             <ul>
@@ -22,6 +24,9 @@
                 <li><a href="#blog"><i class="fa-solid fa-comments"></i> BLOG</a></li>
                 <li><a href="#contact"><i class="fa-regular fa-envelope">&nbsp;</i>CONTACT</a></li>
             </ul>
+            <label for="click" id="click">
+                <i class="fa-solid fa-bars"></i>
+            </label>
         </nav>
 
     </header>
@@ -435,13 +440,59 @@
 
     </section>
 
-    <section id="contact">
+    <section id="contact-map">
+
         <div class="team-heading">
-            <h1><span>CONTACT  </span><span class="headd"> US</span></h1>
+            <h1><span>CONTACT </span><span class="headd"> US</span></h1>
             <p class="team-heading-eprara">GET IN TOUCH</p>
         </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.960074389805!2d80.95394669999999!3d26.848220149999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0342dc3deb%3A0x4b856736929fdab3!2zTHVja25vdyBHb2xmIENsdWIg4KSy4KSW4KSo4KSKIOCkl-Cli-CksuCljeCkqyDgpJXgpY3gpLLgpKw!5e0!3m2!1sen!2sin!4v1714979889183!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
+    <section id="contact">
+        <div class="contact-parallex">
+            <div class="team-heading">
+                <h1><span>SEND US AN </span><span class="hed">EMAIL</span></h1>
+                <p class="team-heading-eprara">WE ARE VERY RESPONSIVE TO MESSAGES</p>
+
+            </div>
+
+            <div class="contact-form">
+                <label for="fname"></label>
+                <input type="text" name="fname" id="fname" placeholder="Enter First Name">
+                <label for="lname"></label>
+                <input type="text" name="fname" id="lname" placeholder="Enter Last Name"><br>
+                <label for="msg"></label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                <label for="btn"></label>
+                <input type="button" name="btn" id="btn" value="SEND MESSAGES">
+            </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <h4>SALIMO - ONE PAGE PARALLAX</h4>
+            <br>
+            <p>© copyright 2017 salimo & designed with ❤ by Shanideval</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

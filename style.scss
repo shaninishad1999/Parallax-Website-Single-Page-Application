@@ -48,6 +48,24 @@ nav ul li a i {
     font-size: 10px;
 }
 
+#click {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 #hero {
     height: 100vh;
     text-align: center;
@@ -133,18 +151,7 @@ nav ul li a i {
     margin-bottom: 20px;
 }
 
-// .user-icons .line::before{
-//     content: '';
-//     width: 200px;
-//     height: 5px;
-//     background-color: #ff00ff;
-// }
-// .user-icons .line2::after{
-//     content: '';
-//     width: 100px;
-//     height: 5px;
-//     background-color: #ff00ff;
-// }
+
 
 .container {
     display: grid;
@@ -154,6 +161,10 @@ nav ul li a i {
     padding-bottom: 100px;
     gap: 30px;
 }
+
+
+
+
 
 .box-1 h1 {
     border-bottom: 1 px solid #ff00ff;
@@ -199,13 +210,23 @@ nav ul li a i {
 
 
 .projectmanager-container {
-    display: flex;
+    display: grid;
     // flex: wrap;
     grid-template-columns: repeat(2, 1fr);
     margin-left: 140px;
     margin-right: 140px;
     gap: 100px;
 }
+
+
+
+
+
+.item-1 {
+    margin-top: 400px;
+    text-align: center;
+}
+
 
 .item-1 img {
     border-radius: 50%;
@@ -625,47 +646,58 @@ select {
     width: 40px;
     padding-top: 10px;
     // line-height: 0.5;
-margin: auto;
+    margin: auto;
 
 
 
 
 }
-.blog-main-div h1{
+
+.blog-main-div h1 {
     font-weight: normal;
     margin-top: 10px;
     font-size: 20px;
     text-align: left;
     padding-left: 20px;
 }
-.blog-main-div-para{
+
+.blog-main-div-para {
     text-align: left;
     padding: 20px;
 }
-.blog-btn{
+
+.blog-btn {
     margin-top: 20PX;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.blog-btn button{
+.blog-btn button {
     padding: 10px 40px 10px 40px;
     background-color: #ff00ff;
     color: white;
     font-weight: normal;
     border: none;
     outline: none;
-border-radius: 25px;
-cursor: pointer;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
-.team-heading{
+#contact-map {
+    background-color: #ccc;
+    padding-bottom: 50px;
+}
+
+
+.team-heading {
     color: white;
 }
-.team-heading p{
+
+.team-heading p {
     color: white;
 }
-.video-img{
+
+.video-img {
     background-image: url('/images/V.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -673,9 +705,166 @@ cursor: pointer;
     background-attachment: fixed;
     height: 50vh;
 }
-.team-heading-eprara{
+
+.headd {
     color: black;
 }
-.headd{
-    color: black;
+
+iframe {
+    width: 100%;
+}
+
+.team-heading h1 .hed {
+    color: white;
+}
+
+
+
+.contact-parallex {
+    background-image: url('/images/l.base');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+input[type=text],
+select {
+    padding: 10px 20px;
+    font-size: 17px;
+    margin: 10px;
+    border-radius: 25px;
+    font-weight: normal;
+}
+
+
+textarea {
+    width: 35%;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+footer div {
+    text-align: center;
+    align-content: center;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+
+
+@media screen and (max-width:768px) {
+    nav label{
+        display: block;
+    }
+
+
+    nav ul{
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-color: aqua;
+        display: none;
+        width: 100%;
+    }
+
+    #click:checked~nav ul{
+        display: block;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+    .hero {
+        position: relative;
+        // opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/images/hero\ section.jpg");
+        min-height: 100%;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+    
+    
+    
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    .bgimg-1 {
+        height: 100vh;
+    }
+
+    .projectmanager-container {
+        display: grid;
+        // flex: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 100px;
+    }
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+
+        
+
+        
+}
+.team-container {
+    // display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+input[type=email],
+select {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 17px;
+    margin: 10px;
+    outline: none;
+    border: transparent;
+    border-radius: 25px;
+    font-weight: normal;
+
+
+}
 }
