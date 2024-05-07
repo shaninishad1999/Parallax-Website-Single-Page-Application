@@ -48,13 +48,7 @@ nav ul li a i {
     font-size: 10px;
 }
 
-#click {
-    display: none;
-}
 
-nav label {
-    display: none;
-}
 
 
 
@@ -170,9 +164,7 @@ nav label {
     border-bottom: 1 px solid #ff00ff;
 }
 
-.box-2 img {
-    height: 400px;
-}
+
 
 .container-2 {
     margin-top: 30px;
@@ -216,6 +208,8 @@ nav label {
     margin-left: 140px;
     margin-right: 140px;
     gap: 100px;
+    align-content: center;
+    justify-items: center;
 }
 
 
@@ -223,7 +217,7 @@ nav label {
 
 
 .item-1 {
-    margin-top: 400px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -325,7 +319,7 @@ nav label {
 
     >div {
         height: 200px;
-        width: 350px;
+        // width: 350px;
         background-color: #ccc;
         margin: 10px;
         text-align: center;
@@ -402,6 +396,9 @@ nav label {
 }
 
 // portfolio
+#portfolio {
+    background-color: #ccc;
+}
 
 .portfolio-heading {
     text-align: center;
@@ -440,7 +437,7 @@ nav label {
 
 
 .portfolio-container {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 160px;
@@ -498,6 +495,10 @@ nav label {
         font-weight: bold;
     }
 
+}
+
+#team {
+    background-color: #ccc;
 }
 
 .team-heading {
@@ -616,6 +617,9 @@ select {
 
 }
 
+#blog {
+    background-color: #ccc;
+}
 
 .blog-container {
     display: grid;
@@ -631,7 +635,7 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
-    width: 400px;
+    // width: 400px;
 
 }
 
@@ -668,7 +672,7 @@ select {
 
 .blog-btn {
     margin-top: 20PX;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -704,6 +708,8 @@ select {
     background-size: cover;
     background-attachment: fixed;
     height: 50vh;
+
+
 }
 
 .headd {
@@ -760,30 +766,46 @@ footer div {
     background-color: rgba(0, 0, 0, 0.356);
 }
 
+#click {
+    display: none;
+}
 
+nav label {
+    display: none;
+    color: white;
+}
 
 @media screen and (max-width:768px) {
-    nav label{
+    nav label {
         display: block;
+        // color: white;
+
     }
 
 
-    nav ul{
+    nav ul {
         position: absolute;
         left: 0;
         top: 80px;
-        background-color: aqua;
+        background-color: white;
+
         display: none;
         width: 100%;
+        // z-index: 15;
     }
 
-    #click:checked~nav ul{
+    nav ul li a {
+        color: black;
+    }
+
+    #click:checked~nav ul {
         display: block;
     }
 
     .hero {
         height: 100vh;
     }
+
     .hero {
         position: relative;
         // opacity: 0.65;
@@ -796,10 +818,11 @@ footer div {
         height: 100vh;
         align-items: center;
         align-content: center;
-    
-    
-    
+
+
+
     }
+
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -811,6 +834,12 @@ footer div {
 
     #about {
         height: 100vh;
+        padding-top: 80px;
+    }
+
+
+    .box-2 img {
+        height: 200px;
     }
 
     .bgimg-1 {
@@ -823,48 +852,327 @@ footer div {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 10px;
         margin-right: 10px;
-        gap: 100px;
+        gap: 10px;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
     }
+
+    .item-1 img {
+        height: 200px;
+    }
+
+
     .service-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-left: 10px;
         margin-right: 10px;
         padding-bottom: 10px;
+    }
 
-        
+    .service-container>div {
+        height: 200px;
+        /* width: 350px; */
+        background-color: #ccc;
+        margin: 10px;
+        text-align: center;
+        align-content: center;
+    }
 
-        
+    #service {
+        // padding-top: 180px;
+        height: 150vh;
+        align-content: center;
+
+    }
+
+.service-heading{
+
+    >h1{
+        padding-top: 0px;
+    }
 }
-.team-container {
-    // display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+
+    .team-container {
+        // display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin: 10px;
 
 
+    }
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    input[type=email],
+    select {
+        // width: 100%;
+        padding: 10px 20px;
+        font-size: 17px;
+        margin: 10px;
+        outline: none;
+        border: transparent;
+        border-radius: 25px;
+        font-weight: normal;
+
+
+    }
+
+    .item-1 {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #projectmanager {
+        height: 150vh;
+    }
+
+    .newselter-img {
+        height: 70vh;
+    }
+
+    textarea {
+        width: 75%;
+        border-radius: 25px;
+    }
+
+    input[type=button],
+    select {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 17px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background-color: #ff00ff;
+    }
+
+    .project-work {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
-.blog-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-input[type=email],
-select {
-    width: 100%;
-    padding: 10px 20px;
-    font-size: 17px;
-    margin: 10px;
-    outline: none;
-    border: transparent;
-    border-radius: 25px;
-    font-weight: normal;
+
+// 500px
+
+@media screen and (max-width:500px) {
+    nav label {
+        display: block;
+        color: white;
+        // position: relative;
+        // z-index: 5;
+    }
 
 
-}
+    
+    nav ul {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-color: white;
+
+        display: none;
+        width: 100%;
+        // z-index: 15;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    #click:checked~nav ul {
+        display: block;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero {
+        position: relative;
+        // opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/images/hero\ section.jpg");
+        min-height: 100%;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+
+
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+
+    #about {
+        height: 120vh;
+    }
+
+    .bgimg-1 {
+        height: 100vh;
+    }
+
+    .box-2 img {
+        height: 200px;
+    }
+
+    .projectmanager-container {
+        display: grid;
+        // flex: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+        text-align: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .item-1 img {
+        height: 200px;
+    }
+
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .service-container>div {
+        height: 200px;
+        /* width: 350px; */
+        background-color: #ccc;
+        margin: 10px;
+        text-align: center;
+        align-content: center;
+    }
+
+
+    #service {
+        height: 150vh;
+    }
+
+    .team-container {
+        // display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin: 10px;
+
+
+    }
+
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    input[type=email],
+    select {
+        // width: 100%;
+        padding: 10px 20px;
+        font-size: 17px;
+        margin: 10px;
+        outline: none;
+        border: transparent;
+        border-radius: 25px;
+        font-weight: normal;
+
+
+    }
+
+    .item-1 {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #projectmanager {
+        height: 150vh;
+    }
+
+    .newselter-img {
+        height: 70vh;
+    }
+
+    textarea {
+        width: 75%;
+        border-radius: 25px;
+    }
+
+    #testominal {
+        // height: 200vh;
+        width: 100%;
+    }
+
+    .bgimg-2 {
+        height: 150vh;
+    }
+
+    input[type=button],
+    select {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 17px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background-color: #ff00ff;
+    }
+
+    .cool-fact {
+        height: 100vh;
+    }
+
+    .testominal-img img {
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        margin: 0px;
+    }
+
+    .project-work {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-item {
+        background-image: url(/images/blog-post-small-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: auto;
+    }
 }
