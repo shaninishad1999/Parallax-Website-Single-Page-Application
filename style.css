@@ -159,6 +159,10 @@ nav ul li a i {
   cursor: pointer;
 }
 
+.box-2 img {
+  height: 300px;
+}
+
 .projectmanager-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
