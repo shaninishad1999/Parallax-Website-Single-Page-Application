@@ -949,4 +949,12 @@ nav label {
     height: 250px;
     width: auto;
   }
+  
+.testominal-content {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: white;
+}
+  
 }/*# sourceMappingURL=style.css.map */
